@@ -21,8 +21,6 @@ public class Keyboard implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        System.out.println(e.getKeyChar());
-
         int mx = MouseInfo.getPointerInfo().getLocation().x - frame.getX() - 10;
         int my = MouseInfo.getPointerInfo().getLocation().y - frame.getY() - 30;
 
@@ -72,6 +70,11 @@ public class Keyboard implements KeyListener {
 
             case 't':
                 Window.KEY_BUFFER = 5;
+
+                break;
+
+            case 'l':
+                Window.KEY_BUFFER = 6;
 
                 break;
         }

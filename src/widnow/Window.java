@@ -118,6 +118,15 @@ public class Window extends JPanel {
                 );
 
                 resetPos();
+            } else if (KEY_BUFFER == 6) {
+                commandList.add(
+                        Command.build()
+                                .setPos1(pos1)
+                                .setPos2(pos2)
+                                .setCmdIndex(5)
+                );
+
+                resetPos();
             }
 
             KEY_BUFFER = 0;

@@ -55,6 +55,11 @@ public class CommandHandler {
 
                 builder.append(String.format("triangle(%d, %d, %d, %d, %d, %d);%n", command.pos1.x,
                         command.pos1.y, command.pos2.x, command.pos2.y, command.pos3.x, command.pos3.y));
+            } else if (command.cmdIndex == 5) {
+                g.drawLine(command.pos1.x, command.pos1.y, command.pos2.x, command.pos2.y);
+
+                builder.append(String.format("line(%d, %d, %d, %d);%n", command.pos1.x,
+                        command.pos1.y, command.pos2.x, command.pos2.y));
             }
         }
 
